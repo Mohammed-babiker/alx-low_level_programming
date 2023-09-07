@@ -4,8 +4,8 @@
  * main - Entry point
  *
  * Description: print a qoute using  prints write function.
- *
- * Return: always 1 (Error)
+ * size_t write(int fd, const void, *bf, size-_t count);
+ * Return: always 1 (Error).
 */
 
 int main(void)
