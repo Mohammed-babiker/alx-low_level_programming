@@ -24,7 +24,7 @@ int main(void)
 
 			if (digit1 != digit2 &&
 					digi1 < digit2 &&
-					digit2 != digit 3 &&
+					digit2 != digit3 &&
 					digit2 < digit3)
 			{
 				putchar(digit1 + 48);
@@ -42,6 +42,7 @@ int main(void)
 		digit2++;
 	}
 	digit1++;
+	}
 	putchar('\n');
 
 	return (0);
