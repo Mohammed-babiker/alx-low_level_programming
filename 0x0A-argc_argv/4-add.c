@@ -13,26 +13,25 @@
 int check_num(char *str)
 
 {
-			/*Declaring variables*/
-			unsigned int count;
+
+	/*Declaring variables*/
+	unsigned int count;
+
+	
+
+	count = 0;
 
 
-					count = 0;
-							while (count < strlen(str)) /*count string*/
+	while (count < stren(str)) /*count string*/
+	{
 
-
-										{
-														if (!isdigit(str[count])) /*check if str there are digit*/
-																		{
-																							return (0);
-																										}
-
-
-																	count++;
-																			}
-									return (1);
-										}
-
+		if (!isdigit(str[count])) /*check if str there are digit*/																{
+															return (0);
+														}
+														count++;
+	}
+	return (1);
+}
 
 	/**
 	 * 	 * main - Print the name of the program
@@ -42,28 +41,18 @@ int check_num(char *str)
 	 * 	 	 	 	 	 * Return: Always 0 (Success)
 	 * 	 	 	 	 	 	 */
 
-
-	int main(int argc, char *argv[])
-
-
+int main(int argc, char *argv[])
+{
+	/*Declaring variables*/
+	int count;
+	int str_to_int;
+	int sum = 0;
+	count = 1;
+	while (count < argc) /*Goes through the whole array*/
+	{
+		if (check_num(argv[count]))
 		{
-
-
-					/*Declaring variables*/
-					int count;
-							int str_to_int;
-									int sum = 0;
-
-
-											count = 1;
-													while (count < argc) /*Goes through the whole array*/
-																{
-																				if (check_num(argv[count]))
-
-
-																								{
-																													str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
-																																	sum += str_to_int;
+			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/																																	sum += str_to_int;
 																																				}
 
 
